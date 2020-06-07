@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
 *{
     color: rgb(239, 238, 240);
     margin: 0;
     padding: 0;
+    font-family: 'Montaga', serif;
     -webkit-font-smoothing: antialiased;
 }
 
 body{
     background-image: linear-gradient(to top, #000000, purple 200%);  
 }
+
 .content{
     display: flex;
     height: 100vh;
