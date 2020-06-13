@@ -4,7 +4,7 @@
     const profile = document.getElementById("profile")
 
     const urlApi = "https://api.github.com/users"
-    const keyApi = "04d18e5047e001fd0c9d6acea183f037df31cc23"
+
 
     
     async function getRepo(userRepo){
