@@ -1,0 +1,26 @@
+{
+  "name": "testeGithub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "node": "^14.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessicameira/testeGithub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessicameira/testeGithub/issues"
+  },
+  "homepage": "https://github.com/jessicameira/testeGithub#readme"
+}
