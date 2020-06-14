@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
 *{
-    color: rgb(239, 238, 240);
+    /*color: rgb(239, 238, 240);*/
     margin: 0;
     padding: 0;
     font-family: 'Montaga', serif;
@@ -8,85 +8,31 @@
 }
 
 body{
-    background-image: linear-gradient(to top, #000000, #D4D4AA 200%);  
+    background-image: linear-gradient(to top, #000000, #d4d4aa 200%);  
 }
-
-.content{
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.content::after{
-    content: "";
-    width: 80%;
-    height: 80%;
-    
-    background-color: white;
-    opacity: 30%;
-    margin: auto;
-    position: absolute;
-    border-radius: 15px;
-    z-index: -1;
-    
-}
-.container #buscar{
-    display: flex;
-    align-items: stretch;
-    margin-top: 50px;
-    margin-bottom: 30px;
-
-}
-
-.container #buscar div input{
-    padding: 16px;
-    border-radius: 8px 0 0 8px;
-    border: 0;
-    color: black;
-    outline: none;
-}
-.container #buscar #btnsearch{
-    background-color: white ;
-    border-radius: 0 8px 8px 0;
-    padding: 1px;
-    border: 0;  
-}
-.container #buscar img{
-    width: 40px;
-    height: 40px;
-}
-
-.container h3{
-    margin-top: 50px;
-}
-.container #favoritos button{
-    margin-top: 15px;
-    margin-bottom: 10px;
-    color: black;
-    padding: 16px;
-    border-radius: 8px;
-    border: 0;
-    outline: none;
-}.container #favoritos #profile {
-    display: grid;
-    padding: 5px;
-    
-}
-
-.container #favoritos #profile div{
+#procurar{
+    color: rgb(78, 77, 77);
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    margin-top: 0;
-    justify-content: flex-start;
-    border: 2px solid whitesmoke;
-    border-radius: 8px 0 8px 0;
-    padding: 15px;
+    height: 100vh;
+    width: 30%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: #EBF5DF;
 }
-.container #favoritos #profile div img{
-    width: 45px;
-    height: 45px;
+#procurar #buscar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+#procurar #buscar input {
+    padding: 10px;
+}
+#procurar #buscar #git{
+    display: flex;
+    width: 40px;
+    height: 40px;
 }
 
 

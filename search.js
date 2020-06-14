@@ -16,11 +16,12 @@
 
     function showProrile(userRepo){
         profile.innerHTML = `<div>
-                <label for="profilename"> Name: <span>${userRepo.login}</span></label>
                 <img src="${userRepo.avatar_url}" alt="${userRepo.name}">
+                <label for="profilename"> Name: <span>${userRepo.login}</span></label>
                 <label for="profilebio">Bio: <span>${userRepo.bio} </span></label>
-                <label for="profileLink">Link: <span>${userRepo.html_url}</span></label>
+                <label for="profileLink"><a href="${userRepo.html_url}">${userRepo.html_url}</a></label>
                 <label for="profilerepos">Repositorios: <span>${userRepo.public_repos} <span></label>
+                <img src="/assets/plus.svg" alt="Adicionar">
             </div>`}
 
         buttonSearch.addEventListener("click", () =>{

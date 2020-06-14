@@ -9,14 +9,15 @@
 <body>
 <div class="content">
     <div class="container">
-        <h1>Busque novos repositórios com base <br>
+        <div id="procurar" >
+            <h1>Busque novos repositórios com base
         no usuário, direto do GitHub</h1>
         <div id="buscar">
             <div>
             <input type="text" name="user" placeholder="Usuário">            
             </div>
             <div id="btnsearch">
-            <a href="#"><img src="/assets/github.svg" alt="Buscar"></a>
+            <a href="#"><img id="git" src="/assets/github.svg" alt="Buscar"></a>
             </div>
         </div>
 
@@ -27,9 +28,12 @@
             <div id="reposearch">
             <button type="submit">Meus Favoritos</button>
             </div>
-            <div id="profile">                
-            </div>
+            
         </div>
+        <div id="profile">                
+        </div>
+        </div>
+        
     </div>
     <script src="search.js"></script>
 </div>
