@@ -10,29 +10,58 @@
 body{
     background-image: linear-gradient(to top, #000000, #d4d4aa 200%);  
 }
-#procurar{
-    color: rgb(78, 77, 77);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 30%;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    background-color: #EBF5DF;
-}
-#procurar #buscar {
+.container{
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
 }
-#procurar #buscar input {
-    padding: 10px;
-}
-#procurar #buscar #git{
+#procurar{
     display: flex;
-    width: 40px;
+    flex-direction: column;
+    padding: 15px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 40%;
+    background-color: #c1cc99;
+
+}
+#buscar {
+    display: flex;
+    flex-direction: row;
+}
+#buscar input{
+    padding: 10px;
+    border-radius: 6px;
+}
+#git{
+    display: flex;
     height: 40px;
+    width: 40px;
+}
+#favoritos h3{
+    margin-bottom: 20px;
+}
+#profile{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px;
+}
+#profile img{
+    width: 150px;
+    height: 150px;
+}
+#profile div{
+    margin: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: #c1cc99;
+    border-radius: 8px;
+    
+}
+#profile #add img{
+    width: 20px;
+    height: 20px;
 }
 
 
