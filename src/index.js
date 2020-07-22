@@ -15,7 +15,7 @@ nunjucks.configure("./src/views", {
 })
 
 
-app.listen(process.env.PORT, ()=> {
+app.listen(process.env.PORT ||5000, ()=> {
 //app.listen(5000, ()=> {
     console.log("server running")
 })
