@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block scripts %}
+<link rel="stylesheet" href="/showrepository.css">
+{% endblock scripts %}
+
+{% block content %}
+
+<div class="show-details">
+    <img src="{{repository.owner.avatar_url}}" alt="{{repository.owner.avatar_url}}">
+    <div class="details-info">
+        <label for="name">Name:</label>
+        <h4>{{repository.name}}</h4>
+        <label for="owner">Owner:</label>
+        <h4>
+            {{repository.owner.login}}
+        </h4>
+        <label for="description">Description:</label>
+        <p>{{repository.description}}</p>
+        <label for="fullName">FullName:</label>
+       <h3>{{repository.full_name}}</h3>
+        <p>
+            <label for="stars">Stars:</label>
+            {{repository.stargazers_count}}
+        </p>
+        <a href="{{repository.html_url}}"> {{repository.html_url}} </a><br>
+        <label for="language">Language</label>
+        <p>
+            {{repository.language}}
+        </p>
+    </div>
+</div>
+<form action="/favourites" method="post">
+<div id="content-div-btn">
+    <input type="hidden" name="fullName" id="{{repository.full_name}}" value="{{repository.full_name}}">
+    <input type="hidden" name="name" id="{{repository.name}}" value="{{repository.name}}">
+    <input type="hidden" name="description" id="{{repository.description}}" value="{{repository.description}}">
+    <input type="hidden" name="urlImg" id="{{repository.owner.avatar_url}}" value="{{repository.owner.avatar_url}}">
+<input type="submit" id="button" value="Add">
+</div>
+</form>
+{% endblock content %}

@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="index-content">
+<fieldset>
+    <legend>
+        <h2>Selecione a linguagem abaixo</h2>
+    </legend>
+        <div id="main-index">
+            <div class="main-index-items" id="javascript">
+                <a href="/repositories/?language=javascript">
+                    <img src="/img/javascript.png" alt="Javascript"></a></div>
+            <div class="main-index-items" id="python" >
+                <a href="/repositories/?language=python">
+                    <img src="/img/python.png" alt="Python"></a></div>
+            <div class="main-index-items" id="php">
+                <a href="/repositories/?language=php">
+                    <img src="/img/php.png" alt="Php"></a></div>
+            <div class="main-index-items" id="ruby">
+                <a href="/repositories/?language=ruby">
+                    <img src="/img/ruby.png" alt="Ruby"></a></div>
+            <div class="main-index-items" id="elixir">
+                <a href="/repositories/?language=elixir">
+                    <img src="/img/elixir.png" alt="Elixir"></a></div>
+        </div>
+</div>
+
+</fieldset>
+    
+    {% endblock content %}

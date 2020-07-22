@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+    {% block scripts %}
+    <link rel="stylesheet" href="/repositories.css">
+    {% endblock scripts %}
+{% block content %}
+<div class="content">
+<div id="repositories-grid">
+
+{% for repository in repositories %}
+    <div class="repository-details">
+        <a href="/repositories/{{repository.full_name}}">
+            <img class="avatar" src="{{repository.owner.avatar_url}}" alt="{{repository.owner.login}}">
+            <div>
+                <h4>
+                    Name: {{repository.name}}
+                </h4>
+                <p>
+                    description: {{repository.description}}
+                </p>
+                <p>
+                    Owner: {{repository.owner.login}}
+                </p>
+            </div>        
+        </a>
+    </div>
+
+{% endfor %}
+</div>
+
+
+</div>
+
+{% endblock content %}
