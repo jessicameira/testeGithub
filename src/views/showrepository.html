@@ -30,13 +30,24 @@
         </p>
     </div>
 </div>
-<form action="/favourites" method="post">
+{% if founded %}
+    <form action="/favourites/{{repository.full_name}}" method="post">
+        <input type="hidden" name="fullName" id="{{repository.full_name}}" value="{{repository.full_name}}">
+    <input type="submit" class="button" value="Remove">
+</form>
+{%else%}
 <div id="content-div-btn">
+<form action="/favourites" method="post">
     <input type="hidden" name="fullName" id="{{repository.full_name}}" value="{{repository.full_name}}">
     <input type="hidden" name="name" id="{{repository.name}}" value="{{repository.name}}">
     <input type="hidden" name="description" id="{{repository.description}}" value="{{repository.description}}">
     <input type="hidden" name="urlImg" id="{{repository.owner.avatar_url}}" value="{{repository.owner.avatar_url}}">
-<input type="submit" id="button" value="Add">
-</div>
+<input type="submit" class="button" value="Add">
 </form>
+
+{% endif %}
+
+
+
+</div>
 {% endblock content %}

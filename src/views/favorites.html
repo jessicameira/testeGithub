@@ -1,14 +1,32 @@
 {% extends "layout.html" %}
 
+{% block scripts %}
+<link rel="stylesheet" href="/favourites.css">
+{% endblock scripts %}
+
 {% block content %}
 
-{% for Favourite in listAllFavourites %}
+<div id="favourites-grid">
+{% for favourite in listAllFavourites %}
+<div class="favourite-items">
+        <a href="/favourites/{{favourite.full_name}}">
+            <img class="avatar" src="{{favourite.img_url}}" alt="{{favourite.full_name}}">
+            <div>
+                <h4>
+                    Name: {{favourite.name}}
+                </h4>
+                <p>
+                    description: {{favourite.description}}
+                </p>
+                <p>
+                    Owner: {{favourite.full_name}}
+                </p>
+            </div>        
+        </a>
+    </div>
 
-<p>
-    {{Favourite.name}}
-</p>
 {% endfor %}
 
-
+</div>
 
 {% endblock content %}
