@@ -4,7 +4,20 @@ const Sequelize = require('sequelize');
 const config = require('../../config/database.js');
 
 const db = {};
-const sequelize = new Sequelize(config);
+let sequelize = {}
+
+if (process.env.DATABASE_URL) {
+
+  sequelize = new Sequelize(process.env.DATABASE_URL, {
+    dialect:  'postgres',
+    protocol: 'postgres',
+    port:     match[4],
+    host:     match[3],
+    logging:  true //false
+  })
+} else {
+ sequelize = new Sequelize(config);
+}
 
 fs
   .readdirSync(__dirname)

@@ -3,5 +3,3 @@ Utilização de API do gitHub, listando repositorios por linguagens pre selecion
 Função: Adição e remoção do registro da base.
 
 Bibliotecas Utilizadas: Axios Babel Express Nunjucks Sequelise (orm) pg (postgresql)
-
-d
