@@ -7,7 +7,7 @@ const repositoriesRouter = Router()
 
 repositoriesRouter.get('/', async (request, response) =>{
     //buscar a lista de repositorios no gitHub pela linguagem e renderizar a lista.
-    const lg = ['javascritp', 'php', 'ruby', 'python', 'elixir']
+    const lg = ['javascript', 'php', 'ruby', 'python', 'elixir']
     const language = request.query.language
     
     //Buscar a linguagem setada no array para validação
