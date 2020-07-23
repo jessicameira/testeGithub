@@ -1,7 +1,10 @@
+import { dotenv } from 'dotenv'
+import { format } from 'path';
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
 const config = require('../../config/database.js');
+
 
 const db = {};
 let sequelize = {}
